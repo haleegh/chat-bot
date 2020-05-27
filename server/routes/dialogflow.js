@@ -66,6 +66,8 @@ router.post('/eventQuery', async (req, res) => {
     // Send request and log result
     const responses = await sessionClient.detectIntent(request);
     console.log('Detected intent');
+
+    // user가 입력한 데이터 받기
     const result = responses[0].queryResult;
     console.log(`  Query: ${result.queryText}`);
     console.log(`  Response: ${result.fulfillmentText}`);

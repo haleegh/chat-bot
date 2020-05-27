@@ -1,5 +1,6 @@
 import React from 'react'
 import { List, Icon, Avatar } from 'antd';
+//ant design 사용
 
 function Message(props) {
 
